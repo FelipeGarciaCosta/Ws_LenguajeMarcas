@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudad xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation= "ExpresionesRegulares.xsd">
+        <nombre>Barcelona</nombre>
+        <poblacion>2000000</poblacion>
+        <alcalde edad="45">
+            <nombre>Xavier</nombre>
+            <apellido>Gomez Perez</apellido>
+            <telefono>+34123456789</telefono>
+            <tarjetaCredito>1234567890</tarjetaCredito>
+            <correo>xavier.gomez@example.com</correo>
+        </alcalde>
+        <funcionario>
+            <funcionario id="1234567890">
+                <nombre_apellido>Juan Perez</nombre_apellido>
+                <codigo_postal>08001</codigo_postal>
+                <fecha_nacimiento>01\01\1990</fecha_nacimiento>
+                <password>A1$bcdefgh</password>
+                <numeor_cuenta_banco>ES1234 5678 9012 3456</numeor_cuenta_banco>
+            </funcionario>
+            <!-- Puedes agregar más funcionarios aquí -->
+        </funcionario>
+</ciudad>

@@ -1,0 +1,62 @@
+{"Videojuego" : {
+    "id" : "F12345" ,
+    "nombre" : "God of War" ,
+    "Nota" : 10 , 
+    "Programadores" : [{
+        "Programador" : {
+            "id" : 11 ,
+            "Nombre" : "Felipe" ,
+            "Apellido" : "Garciano" ,
+            "DNI" : "55409438T" ,
+            "Fecha_Nacimiento" : "17/01/2003" ,
+            "Direccion" : {
+                "Tipo_de_Via" : "Calle" ,
+                "Nombre_via" : "Orense" ,
+                "Codigo_postal" : 28230 ,
+                "Pais" : "España"
+            }
+        },
+
+        "Programador2" : {
+            "id" : 12 ,
+            "Nombre" : "Guillermito" ,
+            "Apellido" : "Magro" ,
+            "DNI" : "44966131T" ,
+            "Fecha_Nacimiento" : "09/05/2024" ,
+            "Direccion" : {
+                "Tipo_de_Via" : "Avenida" ,
+                "Nombre_via" : "Orense" ,
+                "Codigo_postal" : 28230 ,
+                "Pais" : "España"
+            }
+        },
+        "Programador3" : {
+            "id" : 13 ,
+            "Nombre" : "Anthony" ,
+            "Apellido" : "Guanga" ,
+            "DNI" : "1234567J" ,
+            "Fecha_Nacimiento" : "30/02/2005" ,
+            "Direccion" : {
+                "Tipo_de_Via" : "Avenida" ,
+                "Nombre_via" : "Orense" ,
+                "Codigo_postal" : 28230 ,
+                "Pais" : "España"
+            }
+        }
+        
+    }],
+    "Compania" : {
+        "id" : "TUma" ,
+        "Nombre" : "Felipe y asociados" ,
+        "NIF" : "55617696T" ,
+        "Direccion" : {
+            "Tipo_de_Via" : "Avenida" ,
+            "Nombre_via" : "Orense" ,
+            "Codigo_postal" : 28230 ,
+            "Pais" : "España"
+        }
+    }
+
+    }
+    
+}

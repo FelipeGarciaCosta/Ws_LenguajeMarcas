@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<!-- Para este ejemplo se ha eliminado el nombre del esquema (xs), por lo que ya no hace falta
+    poner "xs" delante de cada etiqueta -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+
+    <element name="ciudad">
+        <complexType>
+            <sequence>
+                <element name="nombre">
+                    <simpleType>
+                        <restriction base="string">
+                            <pattern value="[A-Z][a-z]{3,20}"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+               
+                <element name="poblacion">
+                    <simpleType>
+                        <restriction base="string">
+                            <pattern value="\d[100,100000]"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+
+                <element name="alcalde">
+                    <complexType>
+                        <sequence>
+                            <element name="nombre">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="[A-Z]\d{1,10}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="apellido">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="([A-Z]\d{1,10})\s([A-Z]\d{1,10})"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            
+                            <element name="telefono">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="\+34\d{9}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+
+                            <element name="tarjetaCredito">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="\d{10}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            
+                            <element name="correo">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                        </sequence>
+
+                        <attribute name="edad">
+                            <simpleType>
+                                <restriction base="string">
+                                    <pattern value="\d[18,120]"></pattern>
+                                </restriction>
+                            </simpleType>
+                        </attribute>
+
+                    </complexType>
+                </element>
+                    
+                <element name="funcionario">
+                    <complexType>
+                        <sequence>
+                            <element name="funcionario" minOccurs="1" maxOccurs="unbounded">
+                                <complexType>
+                                    <sequence>
+                                        <element name="nombre_apellido">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <pattern value="[A-Z][a-z]{0,24}\s[A-Z][a-z]{0,24}"></pattern>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="codigo_postal">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <pattern value="\d{5}"></pattern>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="fecha_nacimiento">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <pattern value="\D{2}\\\D{2}\\\D{4}"></pattern>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="password">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <pattern value="([A-Z]\d+[%$@!]).{9}"></pattern>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="numeor_cuenta_banco">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <pattern value="\ES\d{4}\s\d{4}\s\d{4}\s"></pattern>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                    </sequence>
+                                    <attribute name="id">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <pattern value=".{10}"></pattern>
+                                            </restriction> 
+                                        </simpleType>
+                                    </attribute>
+                                </complexType>
+                               
+
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+
+            </sequence>
+            <attribute name="codigo">
+                <simpleType>
+                    <restriction base="string">
+                        <pattern value="\D\D\-(\d{2,5})"></pattern>
+                    </restriction> 
+                </simpleType>
+            </attribute>
+
+        </complexType>
+        
+    </element>
+
+</schema>

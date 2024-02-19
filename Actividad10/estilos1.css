@@ -1,0 +1,34 @@
+.relativo {
+    position: relative;
+    background-color: red;
+    width: 200px;
+    /* ancho del contenido de la caja en pixeles*/
+    height: 100px;
+    /* alto del contenido la caja en pixeles*/
+    left: 400px;
+}
+
+.absoluto {
+    position: absolute;
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    top: 300px;
+}
+
+.estatico {
+    position: static;/*posicion por defecto de los elementos*/
+    background-color: rgb(230, 132, 213);
+    width: 200px;
+    height: 100px;
+    left: 200px; /*no funciona por tener valor de position:static*/
+}
+
+.fijado{
+    position: fixed;
+    background-color: blueviolet;
+    width: 200px;
+    height: 100px;
+    left: 500px;
+    top: 300px;
+}

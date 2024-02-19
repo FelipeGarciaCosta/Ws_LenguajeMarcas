@@ -1,0 +1,35 @@
+body{
+    background-image: url("https://cdn.kastatic.org/ka-perseus-images/9e48e4ce97bc817f78f76f6cfb4129183656f848.png") ;
+    background-size: cover; 
+    height: 100%;
+}
+
+h1, h2{
+    font-style: normal;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+section{
+    color: blueviolet;
+    border: 2px solid yellowgreen;
+}
+
+.section{
+    width: 60%;
+}
+
+#section2{
+    float: right;
+    color: rgb(255, 102, 0);
+}
+#cabecera1{
+    font-size: 10px;
+}
+
+#cabecera2{
+    font-size: 2em;
+}
+

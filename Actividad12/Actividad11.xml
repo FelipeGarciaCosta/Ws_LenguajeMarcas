@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Videojuego [
+    <!ELEMENT Videojuego (Nombre,Fecha_creacion,Nota,Programadores,Compania)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Fecha_creacion (#PCDATA)>
+    <!ELEMENT Nota (#PCDATA)>
+
+    <!ELEMENT Programadores (Programador+)>
+    <!ELEMENT Programador (Nombre,Apellido,DNI,Fecha_nacimiento,Direccion)>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT Fecha_nacimiento (#PCDATA)>
+    <!ELEMENT Pais (#PCDATA)>
+    <!ELEMENT Direccion (Tipo_de_via,Nombre_via,Codigo_postal,Pais)>
+
+    <!ELEMENT Tipo_de_via (#PCDATA)>
+    <!ELEMENT Nombre_via (#PCDATA)>
+    <!ELEMENT Codigo_postal (#PCDATA)>
+
+    <!ELEMENT Compania (Nombre,NIF,Direccion)>
+    <!ELEMENT NIF (#PCDATA)>
+
+    <!ATTLIST Videojuego id ID #REQUIRED>
+    <!ATTLIST Programador id CDATA #REQUIRED>
+    <!ATTLIST Compania id ID #REQUIRED>
+]>
+
+<Videojuego id="godeto">
+    <Nombre> God of War </Nombre>
+    <Fecha_creacion> 17/01/2003 </Fecha_creacion>
+    <Nota> 10 </Nota>
+    <Programadores>
+        <Programador id="1">
+            <Nombre> Felipe </Nombre>
+            <Apellido> God of War </Apellido>
+            <DNI> 55409438T </DNI>
+            <Fecha_nacimiento> 17/01/2003 </Fecha_nacimiento>
+            <Direccion>
+                <Tipo_de_via>Calle</Tipo_de_via>
+                <Nombre_via> Orense </Nombre_via>
+                <Codigo_postal> 28230 </Codigo_postal>
+                <Pais> España </Pais>
+            </Direccion>
+        </Programador>
+        <Programador id="2">
+            <Nombre> Guillermito </Nombre>
+            <Apellido> Magro </Apellido>
+            <DNI> 4469931H </DNI>
+            <Fecha_nacimiento> 09/05/1998</Fecha_nacimiento>
+            <Direccion>
+                <Tipo_de_via>Avenida</Tipo_de_via>
+                <Nombre_via> Orense </Nombre_via>
+                <Codigo_postal> 28230 </Codigo_postal>
+                <Pais> España </Pais>
+            </Direccion>
+        </Programador>
+          <Programador id="3">
+            <Nombre> Anthony </Nombre>
+            <Apellido> Guanga </Apellido>
+            <DNI> 12345678T </DNI>
+            <Fecha_nacimiento> 30/02/2005 </Fecha_nacimiento>
+            <Direccion>
+                <Tipo_de_via>Calle</Tipo_de_via>
+                <Nombre_via> Orense </Nombre_via>
+                <Codigo_postal> 28230 </Codigo_postal>
+                <Pais> España </Pais>
+            </Direccion>
+        </Programador>
+    </Programadores>
+
+    <Compania id="Tuma">
+        <Nombre> Felipe y asociados </Nombre>
+        <NIF> 55409438T </NIF>
+        <Direccion>
+            <Tipo_de_via>Avenida</Tipo_de_via>
+            <Nombre_via> Maleante </Nombre_via>
+            <Codigo_postal> 28230 </Codigo_postal>
+            <Pais> España </Pais>
+        </Direccion>
+    </Compania>
+
+</Videojuego>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Videojuego SYSTEM "Verificador.dtd">
+
+<Videojuego id="godeto">
+    <Nombre> HOLA </Nombre>
+    <Fecha_creacion> 17/01/2003 </Fecha_creacion>
+    <Nota> 10 </Nota>
+    <Programadores>
+        <Programador id="1">
+            <Nombre> LUIS </Nombre>
+            <Apellido> MANCO </Apellido>
+            <DNI> 55409438T </DNI>
+            <Fecha_nacimiento> 17/01/2003 </Fecha_nacimiento>
+            <Direccion>
+                <Tipo_de_via>AVENIDA</Tipo_de_via>
+                <Nombre_via> plaza españa </Nombre_via>
+                <Codigo_postal> 25230 </Codigo_postal>
+                <Pais> España </Pais>
+            </Direccion>
+        </Programador>
+        <Programador id="2">
+            <Nombre> ERJIE </Nombre>
+            <Apellido> XIA XUA </Apellido>
+            <DNI> 2443554E </DNI>
+            <Fecha_nacimiento> 90/50/8991</Fecha_nacimiento>
+            <Direccion>
+                <Tipo_de_via>Avenida</Tipo_de_via>
+                <Nombre_via> Orense </Nombre_via>
+                <Codigo_postal> 28230 </Codigo_postal>
+                <Pais> España </Pais>
+            </Direccion>
+        </Programador>
+          <Programador id="3">
+            <Nombre> ANTONIO MONTANA </Nombre>
+            <Apellido> Guanga </Apellido>
+            <DNI> 12345678T </DNI>
+            <Fecha_nacimiento> 30/02/2005 </Fecha_nacimiento>
+            <Direccion>
+                <Tipo_de_via>Calle</Tipo_de_via>
+                <Nombre_via> Orense </Nombre_via>
+                <Codigo_postal> 28230 </Codigo_postal>
+                <Pais> España </Pais>
+            </Direccion>
+        </Programador>
+    </Programadores>
+
+    <Compania id="Tuma">
+        <Nombre> Felipe &amp; asociados  </Nombre>
+        <NIF> 55409438T </NIF>
+        <Direccion>
+            <Tipo_de_via>Avenida</Tipo_de_via>
+            <Nombre_via> Maleante </Nombre_via>
+            <Codigo_postal> 28230 </Codigo_postal>
+            <Pais> España </Pais>
+        </Direccion>
+    </Compania>
+
+</Videojuego>

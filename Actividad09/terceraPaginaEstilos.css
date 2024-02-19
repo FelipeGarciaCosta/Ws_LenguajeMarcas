@@ -1,0 +1,23 @@
+.manzana{
+    list-style-image: url(img/manzana\ icono.jpg);
+}
+
+.ciruela{
+    list-style-image: url(img/ciruela\ icono.jpg);
+}
+
+.banana{
+    list-style-image: url(img/banana\ icono.jpg);
+}
+
+#mayus{
+    list-style-type: upper-alpha;
+}
+
+ul{
+    list-style-type: square;
+}
+
+ol{
+    list-style-type: upper-roman;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="empresa">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="NIF" type="xs:string"/>
+            <xs:element name="esEspañol" type="xs:boolean"/>
+            <xs:element name="capitalSocial" type="xs:string"/>
+            <xs:element name="empleados" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="apellido" type="xs:string" minOccurs="1"/>
+                        <xs:element name="DNI" type="xs:int"/>
+                        <xs:element name="esExtranjero" type="xs:boolean"/>
+                        <xs:element name="fechaNacimiento" type="xs:date"/>
+                        <xs:element name="salario" type="xs:double"/>
+                        <xs:element name="direccion" minOccurs="1">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="direcEnString" type="xs:string"/>
+                                    <xs:element name="pais" type="xs:string"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="estaCasado" type="xs:boolean"/>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="direccion" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="tipoVia" type="xs:string"/>
+                        <xs:element name="nombreVia" type="xs:string"/>
+                        <xs:element name="CP">
+                            <xs:complexType>
+                                <xs:choice>
+                                    <xs:element name="euros" type="xs:double"/>
+                                    <xs:element name="dolares" type="xs:double"/>
+                                    <xs:element name="yenes" type="xs:double"/>
+                                </xs:choice>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="pais" type="xs:string"/>
+                    </xs:sequence>
+                    
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+
+
+</xs:schema>

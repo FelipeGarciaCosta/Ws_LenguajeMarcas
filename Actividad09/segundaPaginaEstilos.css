@@ -1,0 +1,29 @@
+p.tnr{
+    border: 3px blue solid;
+    animation: changeColor 3s infinite;
+}
+@keyframes changeColor {
+    0%{
+        color: blue;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: red;
+    }
+    
+}
+
+h1{
+    border-style: solid;
+    border-color: blue;
+    border-width: 3px;
+}
+
+#especial{
+    border-top:solid black;
+    border-bottom: 10px dashed violet;
+    border-right:solid red;
+    border-left: dashed yellowgreen;
+}

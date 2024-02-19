@@ -1,0 +1,26 @@
+.enLinea{
+    background-color: rgb(228, 175, 201);
+    display: inline;
+    width: 400px;/* No tiene efecto al ser inline */
+}
+
+.bloque{
+    background-color: beige;
+    display: block;
+}
+
+.aVerQuePasa{
+    width: 30px;
+    background-color: blue;
+    display: inline;
+}
+
+.aVerQuePasa2{
+    width: 30px;
+    background-color: violet;
+    display: inline-block;
+}
+
+.oculto{
+    display: none;
+}
